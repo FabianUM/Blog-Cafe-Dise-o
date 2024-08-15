@@ -250,9 +250,16 @@ img {
     width: 95%;
     padding: 5rem;
 }
+
 .campo {
-    display: flex;
-    margin-bottom: 2rem;
+    display: block;
+    margin-bottom: 1rem;
+}
+@media (min-width: 768px) {
+    .campo {
+        display: flex;
+        margin-bottom: 2rem;
+    }
 }
 .campo__label {
     flex: 0 0 9rem;
@@ -261,7 +268,7 @@ img {
 }
 .campo__field {
     flex: 1;
-    border: 1px solid var(--gris);
+    border: 1px solid var(--negro);
 }
 .campo__field--textarea {
     height: 20rem;
